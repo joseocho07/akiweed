@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akiweed</title>
+  <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+  <div id="pantalla-inicio" class="container">
+    <h1>🌿 akiweed</h1>
+    <p>Bienvenido, ¿quieres jugar?</p>
+    <button id="btnEntrar">Entrar</button>
+  </div>
+  <div id="pantalla-juego" class="container" style="display:none;">
+    <p id="pregunta">Piensa en un personaje... ¿Listo?</p>
+    <div class="botones">
+      <button id="btnSi">Sí</button>
+      <button id="btnNo">No</button>
+    </div>
+    <div id="imagenes-personajes" style="display:none; margin-top:20px;">
+      <img id="img-cj" src="imagenes/35adffca-04fb-4790-a4f0-fc1fb2e73615.jpg" alt="CJ" style="width:150px; border-radius:20px; display:none;">
+      <img id="img-rata" src="imagenes/WhatsApp Image 2025-09-06 at 3.39.51 PM.jpeg" alt="Rata" style="width:150px; border-radius:20px; display:none;">
+      <img id="img-Tulun" src="imagenes/WhatsApp Image 2025-09-26 at 8.07.21 PM.jpeg" alt="Tulun" style="width:150px; border-radius:20px; display:none;">
+      <img id="img-cipe" src="imagenes/WhatsApp Image 2025-09-26 at 8.08.40 PM.jpeg" alt="Cipe" style="width:150px; border-radius:20px; display:none;">
+      <img id="img-pulga" src="imagenes/WhatsApp Image 2025-09-26 at 8.08.59 PM.jpeg" alt="Pulga" style="width:150px; border-radius:20px; display:none;">
+    </div>
+    <button id="btnReiniciar" style="display:none; margin-top:20px;">Volver a jugar</button>
+  </div>
+  <script src="juego.js"></script>
+  <script>
+    document.getElementById('btnEntrar').onclick = function() {
+      document.getElementById('pantalla-inicio').style.display = 'none';
+      document.getElementById('pantalla-juego').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
